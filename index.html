@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="mesh-bg" id="meshBg"></div>
     <div id="bubble-container"></div> 
     
@@ -18,20 +19,26 @@
     <!-- DOCK ATAS -->
     <div class="top-dock-container">
         <div class="asnf-dock-wrapper">
-            <div class="dock-segment dock-left"><div class="asnf-logo">AF</div></div>
-            <div class="dock-segment dock-center"><div class="dock-center-title" id="dynamic-dock-title">Main Portal</div></div>
+            <div class="dock-segment dock-left">
+                <div class="asnf-logo">AF</div>
+            </div>
+            <div class="dock-segment dock-center">
+                <div class="dock-center-title" id="dynamic-dock-title">Main Portal</div>
+            </div>
             <div class="dock-segment dock-right" onclick="toggleMobileMenu()">
                 <div class="hamburger-menu">
-                    <div class="hamburger-line" id="hl1"></div><div class="hamburger-line" id="hl2"></div><div class="hamburger-line" id="hl3"></div>
+                    <div class="hamburger-line" id="hl1"></div>
+                    <div class="hamburger-line" id="hl2"></div>
+                    <div class="hamburger-line" id="hl3"></div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- MOBILE MENU (Perhatikan href="#nama-menu") -->
+    <!-- MOBILE MENU (Hash Routing) -->
     <div class="mobile-menu-overlay" id="mobileMenu">
         <a href="#home" class="menu-link active">Home / Intro</a>
-        <a href="#about-us" class="menu-link">About Us</a>
+        <a href="#about" class="menu-link">About Us</a>
         <a href="#director" class="menu-link">Board of Director</a>
         <a href="#ecosystem" class="menu-link">Flagship Ecosystem</a>
         <a href="#services" class="menu-link">Services & Studio</a>
@@ -47,6 +54,7 @@
                 <h1 class="hero-title">ASNF Techno Lab</h1>
                 <p class="hero-subtitle">Pushing Hardware Limits. Crafting Next-Gen Systems.</p>
             </header>
+
             <div class="glass-card" style="text-align: center; border-bottom: 4px solid var(--accent);">
                 <h2 style="font-size: 32px; margin-top: 0;">Welcome to Our Hub</h2>
                 <p style="color: var(--text-sub); line-height: 1.9; font-size: 17px; margin-bottom: 40px;">
@@ -60,25 +68,32 @@
         </div>
 
         <!-- ================= ABOUT US ================= -->
-        <div id="menu-about-us" class="tab-section">
+        <div id="menu-about" class="tab-section">
             <header class="hero-header">
                 <h1 class="hero-title">About Company</h1>
                 <p class="hero-subtitle">Our Vision & Mission</p>
             </header>
+
             <div class="glass-card" style="margin-bottom: 30px;">
                 <h3 style="font-size: 26px; margin-top: 0; color: #fff;">History & Foundation</h3>
                 <p style="color: var(--text-sub); line-height: 1.9; font-size: 16px;">
-                    ASNF Techno Lab, founded on <strong>2026/03/20</strong> by M. Nabil and Gemini AI...
+                    ASNF Techno Lab, founded on <strong>2026/03/20</strong> by M. Nabil and Gemini AI, was established in Aceh, Lhokseumawe City, with the capital of a Mid-Range Device (Infinix Hot 50 Pro Plus) and a Dell Latitude e527 Laptop.<br><br>
+                    My goal in creating this company was initially focused on creating root modules along with a web portal to download them. However, wanting to expand the ecosystem, I created a pioneering venture between ASNF Techno Lab and AnXin Technology Project. AnXin Technology Project operates as a sub-brand of the AnXin A.I. ecosystem, fully managed and operated by ASNF Techno Lab.
                 </p>
             </div>
+
             <div class="shinko-grid" style="grid-template-columns: 1fr;">
                 <div class="glass-card" style="border-left: 5px solid var(--accent);">
                     <h3 style="font-size: 22px; margin-top: 0; color: var(--accent);">Our Mission</h3>
-                    <p style="color: var(--text-sub); line-height: 1.8; font-size: 16px;">Trying to break the limits and performance of mobile devices...</p>
+                    <p style="color: var(--text-sub); line-height: 1.8; font-size: 16px;">
+                        Trying to break the limits and performance of mobile devices from the Root Module level, and also providing Personal or Store Promotions through premium web architectures like Shinko Bio.
+                    </p>
                 </div>
                 <div class="glass-card" style="border-left: 5px solid var(--asnf-purple);">
                     <h3 style="font-size: 22px; margin-top: 0; color: var(--asnf-purple);">Focus Areas</h3>
-                    <p style="color: var(--text-sub); line-height: 1.8; font-size: 16px;">Web Development (UI/UX), Root Module Architecture, and Artificial Intelligence...</p>
+                    <p style="color: var(--text-sub); line-height: 1.8; font-size: 16px;">
+                        ASNF Techno Lab focuses on several core areas: Web Development (UI/UX), Root Module Architecture, and Artificial Intelligence through the AnXin Technology Project.
+                    </p>
                 </div>
             </div>
         </div>
@@ -89,19 +104,24 @@
                 <h1 class="hero-title">Board Of Director</h1>
                 <p class="hero-subtitle">The Architect Behind ASNF</p>
             </header>
+
             <div class="glass-card">
                 <div class="director-layout">
                     <div class="director-img-container">
                         <div class="director-halo"></div>
-                        <img src="asnf-aXn.png" class="director-img" alt="M. Nabil Irza Prawira">
+                        <img src="asnf-aXn.png" class="director-img" alt="M. Nabil Irza Prawira" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'320\' height=\'568\'><rect width=\'320\' height=\'568\' fill=\'%23111\'/><text x=\'50%\' y=\'50%\' font-family=\'sans-serif\' font-size=\'24\' fill=\'%23fff\' text-anchor=\'middle\' dominant-baseline=\'middle\'>Director Photo (9:16)</text></svg>'">
                     </div>
+                    
                     <div class="director-info">
                         <div class="badge b-gold">Vocational School Student</div>
                         <h2 style="font-size: 38px; font-weight: 900; margin: 0 0 10px; letter-spacing: -1px;">M. Nabil Irza Prawira</h2>
                         <div style="font-size: 18px; color: var(--accent); font-weight: 700; margin-bottom: 25px;">Founder. CEO. Director. (FCEOD)</div>
+                        
                         <p style="color: var(--text-sub); line-height: 1.9; font-size: 16px; margin-bottom: 30px;">
-                            He is a 17-year-old young man who has started learning about cellphone parts...
+                            He is a 17-year-old young man who has started learning about cellphone parts, software, and hardware since he was in the 1st grade of junior high school. He began to understand the realm of ROM modification since the first grade of vocational school, and started understanding the web domain and Dev Module development since the second semester of the second grade of vocational school.<br><br>
+                            M. Nabil is an orphan who only lives with his mother. He was abandoned by ALM. Iria*** (TNI Major), who died of a stroke at the end of 2024.
                         </p>
+                        
                         <blockquote style="border-left: 4px solid var(--asnf-gold); padding-left: 20px; margin: 0; font-style: italic; font-size: 18px; color: #fff;">
                             "Don't give up when you are still young, because your future is waiting for you."
                         </blockquote>
@@ -112,51 +132,216 @@
 
         <!-- ================= ECOSYSTEM ================= -->
         <div id="menu-ecosystem" class="tab-section">
-            <header class="hero-header"><h1 class="hero-title">Flagship Ecosystem</h1><p class="hero-subtitle">Web & Root Modules Matrix</p></header>
-            
+            <header class="hero-header">
+                <h1 class="hero-title">Flagship Ecosystem</h1>
+                <p class="hero-subtitle">Web & Root Modules Matrix</p>
+            </header>
+
             <h2 style="font-size: 28px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; margin-bottom: 30px;">Web Architecture</h2>
             <div class="shinko-grid">
-                <div class="glass-card"><div class="card-logo logo-shinko">S32</div><h3 style="font-size: 22px; font-weight: 800; margin: 0 0 10px;">ShinkoUI 32</h3><p style="color: var(--text-sub); line-height: 1.6; margin-bottom: 25px; flex-grow: 1;">A website that contains a list of Root Modules.</p><a href="https://asnf-techno-lab.github.io/ShinkoUI-31/" target="_blank" class="btn-glass">VISIT SITE</a></div>
-                <div class="glass-card"><div class="card-logo logo-tnv">TNV</div><h3 style="font-size: 22px; font-weight: 800; margin: 0 0 10px;">The Name Vault</h3><p style="color: var(--text-sub); line-height: 1.6; margin-bottom: 25px; flex-grow: 1;">Contains hundreds of recommended names.</p><a href="https://nabilirzap-storywriter.github.io/" target="_blank" class="btn-glass">VISIT SITE</a></div>
+                
+                <div class="glass-card">
+                    <div class="card-logo logo-shinko">S32</div>
+                    <h3 style="font-size: 22px; font-weight: 800; margin: 0 0 10px;">ShinkoUI 32</h3>
+                    <p style="color: var(--text-sub); line-height: 1.6; margin-bottom: 25px; flex-grow: 1;">A website that contains a list of Root Modules that have been created.</p>
+                    <a href="https://asnf-techno-lab.github.io/ShinkoUI-31/" target="_blank" class="btn-glass">VISIT SITE</a>
+                </div>
+
+                <div class="glass-card">
+                    <div style="width: 80px; height: 80px; margin-bottom: 20px; border-radius: 24px; background: linear-gradient(135deg, var(--accent), var(--asnf-purple)); display: flex; justify-content: center; align-items: center; box-shadow: 0 0 30px var(--accent-glow);">
+                        <span style="font-size: 32px; font-weight: 900; color: #fff;">SB</span>
+                    </div>
+                    <h3 style="font-size: 22px; font-weight: 800; margin: 0 0 10px;">Shinko Bio</h3>
+                    <p style="color: var(--text-sub); line-height: 1.6; margin-bottom: 25px; flex-grow: 1;">A website that contains your personal data, shop, along with your rank or position and title.</p>
+                    <a href="https://asnf-techno-lab.github.io/Shinko-bio/" target="_blank" class="btn-glass">VISIT SITE</a>
+                </div>
+
+                <div class="glass-card">
+                    <div class="card-logo logo-anv">ANV</div>
+                    <h3 style="font-size: 22px; font-weight: 800; margin: 0 0 10px;">AI Name Vault</h3>
+                    <p style="color: var(--text-sub); line-height: 1.6; margin-bottom: 25px; flex-grow: 1;">A website that focuses on creating the names you want with various categories available.</p>
+                    <a href="https://asnf-techno-lab.github.io/storyname/" target="_blank" class="btn-glass">VISIT SITE</a>
+                </div>
+
+                <div class="glass-card">
+                    <div class="card-logo logo-tnv">TNV</div>
+                    <h3 style="font-size: 22px; font-weight: 800; margin: 0 0 10px;">The Name Vault</h3>
+                    <p style="color: var(--text-sub); line-height: 1.6; margin-bottom: 25px; flex-grow: 1;">A website that contains hundreds of names that I recommend if you want to use them for stories or whatever.</p>
+                    <a href="https://nabilirzap-storywriter.github.io/" target="_blank" class="btn-glass">VISIT SITE</a>
+                </div>
+
+                <div class="glass-card">
+                    <div class="badge b-gold" style="margin-bottom: 10px;">X6880 Exclusive</div>
+                    <h3 style="font-size: 22px; font-weight: 800; margin: 0 0 10px;">ASNF Rom Vault</h3>
+                    <p style="color: var(--text-sub); line-height: 1.6; margin-bottom: 25px; flex-grow: 1;">A website containing a list of custom ROMs and recovery specifically for Infinix Hot 50 Pro Plus (X6880) phones.</p>
+                    <a href="https://asnf-techno-lab.github.io/ASNF-Rom/" target="_blank" class="btn-glass">VISIT SITE</a>
+                </div>
+
+                <div class="glass-card" style="border-color: var(--accent); box-shadow: 0 0 40px rgba(10,132,255,0.2);">
+                    <svg class="brand-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width: 85px; height: 85px; filter: drop-shadow(0 15px 30px rgba(0,122,255,0.4)); margin-bottom: 20px;">
+                        <defs><linearGradient id="logoGradGlass" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="rgba(255,255,255,0.9)"/><stop offset="100%" stop-color="rgba(0,122,255,0.8)"/></linearGradient></defs>
+                        <polygon points="50,5 90,25 90,75 50,95 10,75 10,25" fill="rgba(255,255,255,0.15)" stroke="url(#logoGradGlass)" stroke-width="4.5" stroke-linejoin="round" style="backdrop-filter: blur(5px);"/>
+                        <path d="M 50 25 L 30 70 M 50 25 L 70 70 M 35 55 L 65 55 M 50 40 L 50 85" fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="50" cy="25" r="4" fill="#ffffff"/><circle cx="50" cy="85" r="4" fill="#ffffff"/>
+                    </svg>
+                    <h3 style="font-size: 22px; font-weight: 800; margin: 0 0 10px;">AnXin A.I</h3>
+                    <p style="color: var(--text-sub); line-height: 1.6; margin-bottom: 25px; flex-grow: 1;">A first AI web with the best design. Even though the AI is not very smart yet, this web is purely built for design, animation, and AI UI/UX.</p>
+                    <a href="https://asnf-techno-lab.github.io/AnXin-A.I/" target="_blank" class="btn-glass btn-primary">VISIT SITE</a>
+                </div>
             </div>
-            
+
             <h2 style="font-size: 28px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; margin-top: 60px; margin-bottom: 30px;">Root Modules Architecture</h2>
             <div class="shinko-grid">
-                <div class="glass-card"><img src="mrpm.png" class="module-img" alt="MRP Module"><h3 style="font-size: 22px; font-weight: 800; margin: 0 0 10px;">Magic Random Pro (MRP)</h3><p style="color: var(--text-sub); line-height: 1.6;">Root modules covering various parts for your phone.</p></div>
-                <div class="glass-card"><img src="AIOG.png" class="module-img" alt="AIOG Module"><h3 style="font-size: 22px; font-weight: 800; margin: 0 0 10px;">All In One Genshin (AIOG)</h3><p style="color: var(--text-sub); line-height: 1.6;">Root Module that focuses on pure performance.</p></div>
+                
+                <div class="glass-card">
+                    <img src="mrpm.png" class="module-img" alt="MRP Module" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1600\' height=\'900\'><rect width=\'1600\' height=\'900\' fill=\'%23111\'/><text x=\'50%\' y=\'50%\' font-family=\'sans-serif\' font-size=\'80\' fill=\'%23fff\' text-anchor=\'middle\' dominant-baseline=\'middle\'>MRP (16:9)</text></svg>'">
+                    <h3 style="font-size: 22px; font-weight: 800; margin: 0 0 10px;">Magic Random Pro (MRP)</h3>
+                    <p style="color: var(--text-sub); line-height: 1.6;">Root modules covering various parts for your phone with spoofing available. Evolving continuously from V11 up to V20.</p>
+                </div>
+
+                <div class="glass-card">
+                    <img src="AIOG.png" class="module-img" alt="AIOG Module" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1600\' height=\'900\'><rect width=\'1600\' height=\'900\' fill=\'%23111\'/><text x=\'50%\' y=\'50%\' font-family=\'sans-serif\' font-size=\'80\' fill=\'%23fff\' text-anchor=\'middle\' dominant-baseline=\'middle\'>AIOG (16:9)</text></svg>'">
+                    <h3 style="font-size: 22px; font-weight: 800; margin: 0 0 10px;">All In One Genshin (AIOG)</h3>
+                    <p style="color: var(--text-sub); line-height: 1.6;">Root Module that focuses on pure performance for Genshin games. In the latest variants, it covers several games, starting from V3 to V6.7.</p>
+                </div>
+
+                <div class="glass-card">
+                    <img src="vsm.png" class="module-img" alt="V Series Module" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1600\' height=\'900\'><rect width=\'1600\' height=\'900\' fill=\'%23111\'/><text x=\'50%\' y=\'50%\' font-family=\'sans-serif\' font-size=\'80\' fill=\'%23fff\' text-anchor=\'middle\' dominant-baseline=\'middle\'>V Series (16:9)</text></svg>'">
+                    <h3 style="font-size: 22px; font-weight: 800; margin: 0 0 10px;">V Series Module</h3>
+                    <p style="color: var(--text-sub); line-height: 1.6;">Similar to MRP, but this line will serve as the true successor to the MRP Module framework. Series starting from V5 onwards.</p>
+                </div>
+
             </div>
         </div>
 
         <!-- ================= SERVICES ================= -->
         <div id="menu-services" class="tab-section">
-            <header class="hero-header"><h1 class="hero-title">Studio Services</h1><p class="hero-subtitle">Premium Web Solutions</p></header>
-            <div class="shinko-grid" style="margin-bottom: 40px;">
-                <div class="glass-card"><div class="badge b-blue">Lite Package</div><div style="font-size: 32px; font-weight: 900; color: #fff; margin: 15px 0;">Rp60.000 - 100.000</div><ul style="list-style: none; padding: 0; margin: 0 0 25px; color: var(--text-sub); font-size: 15px; line-height: 1.8;"><li>✅ Static Landing Page</li><li>✅ Full Apple-like Design</li></ul></div>
-                <div class="glass-card" style="border-color: var(--accent); box-shadow: 0 10px 40px var(--accent-glow); transform: scale(1.05); z-index: 2;"><div class="badge" style="background: var(--accent); color: #fff;">Pro Package (Recommended)</div><div style="font-size: 32px; font-weight: 900; color: #fff; margin: 15px 0;">Rp150.000 - 300.000</div><ul style="list-style: none; padding: 0; margin: 0 0 25px; color: var(--text-sub); font-size: 15px; line-height: 1.8;"><li>✅ All Lite Features</li><li>✅ Firebase Real-time DB</li></ul></div>
+            <header class="hero-header">
+                <h1 class="hero-title">Studio Services</h1>
+                <p class="hero-subtitle">Premium Web Solutions</p>
+            </header>
+
+            <div class="glass-card" style="margin-bottom: 40px; text-align: center;">
+                <h2 style="font-size: 28px; margin-top: 0; color: #fff;">Apple Standard Web. Without Apple Price.</h2>
+                <p style="color: var(--text-sub); font-size: 16px; line-height: 1.8; max-width: 800px; margin: 0 auto 20px;">
+                    We build Single Page Applications (SPA) with iOS/MacOS UI/UX standards that are clean, snappy, and luxurious. Perfect for Personal Bios, Portfolios, or Business Landing Pages.
+                </p>
             </div>
-            <div class="glass-card" style="text-align: center; background: rgba(0,0,0,0.5);"><h3 style="margin-top: 0; font-size: 22px;">How to Order & Payment</h3><div style="font-size: 28px; font-weight: 900; color: var(--accent); letter-spacing: 2px; margin-bottom: 20px;">0821-6065-4849</div></div>
+
+            <div class="shinko-grid" style="margin-bottom: 40px;">
+                <div class="glass-card">
+                    <div class="badge b-blue">Lite Package</div>
+                    <div style="font-size: 32px; font-weight: 900; color: #fff; margin: 15px 0;">Rp60.000 - 100.000</div>
+                    <ul style="list-style: none; padding: 0; margin: 0 0 25px; color: var(--text-sub); font-size: 15px; line-height: 1.8;">
+                        <li>✅ Static Landing Page</li>
+                        <li>✅ Full Apple-like Design</li>
+                        <li>✅ Mobile Responsive</li>
+                        <li>✅ Free Netlify Hosting Setup</li>
+                    </ul>
+                </div>
+
+                <div class="glass-card" style="border-color: var(--accent); box-shadow: 0 10px 40px var(--accent-glow); transform: scale(1.05); z-index: 2;">
+                    <div class="badge" style="background: var(--accent); color: #fff;">Pro Package (Recommended)</div>
+                    <div style="font-size: 32px; font-weight: 900; color: #fff; margin: 15px 0;">Rp150.000 - 300.000</div>
+                    <ul style="list-style: none; padding: 0; margin: 0 0 25px; color: var(--text-sub); font-size: 15px; line-height: 1.8;">
+                        <li>✅ All Lite Features</li>
+                        <li>✅ Firebase Real-time DB</li>
+                        <li>✅ Manual Login/Register System</li>
+                        <li>✅ Secure Data Storage</li>
+                    </ul>
+                </div>
+
+                <div class="glass-card">
+                    <div class="badge b-gold">Premium Package</div>
+                    <div style="font-size: 32px; font-weight: 900; color: #fff; margin: 15px 0;">Rp430.000+</div>
+                    <ul style="list-style: none; padding: 0; margin: 0 0 25px; color: var(--text-sub); font-size: 15px; line-height: 1.8;">
+                        <li>✅ All Pro Features</li>
+                        <li>✅ Custom Admin Dashboard</li>
+                        <li>✅ PWA (Installable on Mobile)</li>
+                        <li>✅ Exclusive UI/UX Consultation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="glass-card" style="text-align: center; background: rgba(0,0,0,0.5);">
+                <h3 style="margin-top: 0; font-size: 22px;">How to Order & Payment</h3>
+                <p style="color: var(--text-sub); font-size: 16px; margin-bottom: 20px;">Support our startup company by donating or sending payments directly via:</p>
+                <div style="font-size: 18px; font-weight: bold; margin-bottom: 10px;">SociaBuzz Portal:</div>
+                <a href="https://sociabuzz.com/nabilirzap" target="_blank" class="btn-glass" style="width: auto; padding: 15px 30px; border-color: var(--asnf-gold); color: var(--asnf-gold); margin-bottom: 20px;">sociabuzz.com/nabilirzap</a>
+                
+                <div style="font-size: 18px; font-weight: bold; margin-bottom: 5px;">Direct Transfer (DANA/GoPay/ShopeePay):</div>
+                <div style="font-size: 28px; font-weight: 900; color: var(--accent); letter-spacing: 2px; margin-bottom: 20px;">0821-6065-4849</div>
+                
+                <p style="color: var(--text-sub); font-size: 14.5px;">After sending payment/donation, please send the screenshot proof to our Instagram DM to start the project.</p>
+            </div>
         </div>
 
         <!-- ================= VAULT ================= -->
         <div id="menu-vault" class="tab-section">
-            <header class="hero-header"><h1 class="hero-title">The Vault</h1><p class="hero-subtitle">Open Source Data</p></header>
-            <div class="glass-card" style="text-align: center;"><div style="font-size: 50px; margin-bottom: 20px;">🔓</div><h2 style="margin-top: 0;">ASNF Open Repository</h2><p style="color: var(--text-sub); line-height: 1.8; font-size: 16px; margin-bottom: 30px;">"The Vault" is our open-source sector...</p><a href="https://asnf-techno-lab.github.io/ASNF-Rom/" target="_blank" class="btn-glass btn-primary" style="width: auto; padding: 18px 40px;">ACCESS X6880 ROM VAULT</a></div>
+            <header class="hero-header">
+                <h1 class="hero-title">The Vault</h1>
+                <p class="hero-subtitle">Open Source Data & Repositories</p>
+            </header>
+
+            <div class="glass-card" style="text-align: center;">
+                <div style="font-size: 50px; margin-bottom: 20px;">🔓</div>
+                <h2 style="margin-top: 0;">ASNF Open Repository</h2>
+                <p style="color: var(--text-sub); line-height: 1.8; font-size: 16px; margin-bottom: 30px;">
+                    ASNF Techno Lab believes in the power of the community. "The Vault" is our open-source sector where we share base kernels, custom recovery ports, and UI Boilerplates (like Shinko Engine default codes) for the public to learn and modify.
+                </p>
+                <a href="https://asnf-techno-lab.github.io/ASNF-Rom/" target="_blank" class="btn-glass btn-primary" style="width: auto; padding: 18px 40px;">ACCESS X6880 ROM VAULT</a>
+            </div>
         </div>
 
         <!-- ================= CONTACT ================= -->
         <div id="menu-contact" class="tab-section">
-            <header class="hero-header"><h1 class="hero-title">Contact & Support</h1><p class="hero-subtitle">Get in Touch with ASNF</p></header>
+            <header class="hero-header">
+                <h1 class="hero-title">Contact & Support</h1>
+                <p class="hero-subtitle">Get in Touch with ASNF</p>
+            </header>
+
             <div class="shinko-grid" style="grid-template-columns: 1fr;">
-                <div class="glass-card"><h3 style="font-size: 22px; margin-top: 0; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">Business & Inquiries (Email)</h3><ul style="list-style: none; padding: 0; margin: 0; font-size: 16px;"><li style="padding: 10px 0; color: var(--accent); font-weight: 600;">📧 mnabilirzaprawira@gmail.com</li></ul></div>
+                
+                <div class="glass-card">
+                    <h3 style="font-size: 22px; margin-top: 0; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">Business & Inquiries (Email)</h3>
+                    <ul style="list-style: none; padding: 0; margin: 0; font-size: 16px;">
+                        <li style="padding: 10px 0; color: var(--accent); font-weight: 600;">📧 mnabilirzaprawira@gmail.com</li>
+                        <li style="padding: 10px 0; color: var(--accent); font-weight: 600;">📧 asnf.do.co@proton.me</li>
+                    </ul>
+                </div>
+
+                <div class="glass-card">
+                    <h3 style="font-size: 22px; margin-top: 0; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">Social Networks</h3>
+                    <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px;">
+                        <a href="https://instagram.com/n4bilirzap.zw" target="_blank" class="btn-glass" style="justify-content: flex-start; border-color: rgba(191,90,242,0.3);">📸 Instagram: @n4bilirzap.zw</a>
+                        <a href="https://tiktok.com/@n4bilirzap.zw" target="_blank" class="btn-glass" style="justify-content: flex-start; border-color: rgba(255,255,255,0.2);">🎵 TikTok: @n4bilirzap.zw</a>
+                        <a href="https://www.threads.net/@n4bilirzap.zw" target="_blank" class="btn-glass" style="justify-content: flex-start; border-color: rgba(255,255,255,0.2);">🧵 Threads: @n4bilirzap.zw</a>
+                        <a href="https://t.me/n4bilirz" target="_blank" class="btn-glass" style="justify-content: flex-start; border-color: rgba(10,132,255,0.3);">✈️ Telegram: @n4bilirz</a>
+                        <a href="https://www.facebook.com/share/1BpVY7mCj3/" target="_blank" class="btn-glass" style="justify-content: flex-start; border-color: rgba(10,132,255,0.3);">📘 Facebook: M Nabil</a>
+                    </div>
+                </div>
+
+                <div class="glass-card" style="background: rgba(255, 214, 10, 0.1); border-color: rgba(255, 214, 10, 0.3);">
+                    <h3 style="font-size: 22px; margin-top: 0; color: var(--asnf-gold);">Support Our Startup</h3>
+                    <p style="color: #fff; line-height: 1.8; font-size: 16px;">
+                        Building next-gen UIs and breaking hardware limits takes time and resources. Support ASNF Techno Lab to keep creating open-source miracles.
+                    </p>
+                    <a href="https://sociabuzz.com/nabilirzap" target="_blank" class="btn-glass btn-primary" style="background: var(--asnf-gold); color: #000; margin-top: 15px;">DONATE VIA SOCIABUZZ</a>
+                </div>
+
+            </div>
+            
+            <div style="text-align: center; margin-top: 60px; font-size: 13px; color: rgba(255,255,255,0.3); letter-spacing: 1px; font-weight: 600;">
+                &copy; 2026 ASNF Techno Lab. All Rights Reserved.<br>
+                Powered by Shinko Engine 15.2 Ultra Core.
+            </div>
+
+            <div style="text-align: center; margin-top: 15px; font-size: 13px;">
+               <a href="privacy-policy.html" style="color: var(--text-sub); text-decoration: none; margin: 0 10px;">Privacy Policy</a> | 
+               <a href="terms-of-service.html" style="color: var(--text-sub); text-decoration: none; margin: 0 10px;">Terms of Service</a>
             </div>
         </div>
 
-        <!-- ================= FOOTER ================= -->
-        <div class="global-footer">
-            &copy; 2026 ASNF Techno Lab. All Rights Reserved.<br>
-            Powered by Shinko Engine 15.2 Ultra Core.<br><br>
-            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
-        </div>
     </div>
 
     <script src="script.js"></script>
