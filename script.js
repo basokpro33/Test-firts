@@ -109,17 +109,24 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// 6. FAST LOADING SCREEN FOR MPA
-window.addEventListener('load', () => {
-    const loader = document.getElementById('loading-screen');
-    if(loader) {
-        // Karena sistem berubah jadi multi-page, loading screen dibuat sangat cepat (500ms)
-        // agar user tidak terganggu menunggu setiap kali pindah halaman.
-        setTimeout(() => {
-            loader.style.opacity = '0';
+// 6. SMART LOADING SCREEN (Hanya muncul 1 kali per sesi browser)
+const loader = document.getElementById('loading-screen');
+if (loader) {
+    // Cek apakah pengunjung sudah pernah loading
+    if (!sessionStorage.getItem('isAppLoaded')) {
+        // Jika belum, jalankan animasi loading
+        window.addEventListener('load', () => {
             setTimeout(() => {
-                loader.style.display = 'none';
-            }, 800); 
-        }, 500); 
+                loader.style.opacity = '0';
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                    // Simpan memori bahwa user sudah melewati loading
+                    sessionStorage.setItem('isAppLoaded', 'true');
+                }, 800); 
+            }, 500); 
+        });
+    } else {
+        // Jika sudah pernah loading, langsung sembunyikan (tanpa animasi)
+        loader.style.display = 'none';
     }
-});
+}
