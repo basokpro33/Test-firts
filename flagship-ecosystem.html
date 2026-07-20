@@ -1,3 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>ASNF Techno Lab | Flagship Ecosystem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mesh-bg" id="meshBg"></div>
+    <div id="bubble-container"></div> 
+    
+    <div id="loading-screen">
+        <div class="load-title">ASNF</div>
+        <div class="load-sub">Official Corporate</div>
+    </div>
+
+    <div class="top-dock-container">
+        <div class="asnf-dock-wrapper">
+            <div class="dock-segment dock-left"><div class="asnf-logo">AF</div></div>
+            <div class="dock-segment dock-center"><div class="dock-center-title" id="dynamic-dock-title">Ecosystem</div></div>
+            <div class="dock-segment dock-right" onclick="toggleMobileMenu()">
+                <div class="hamburger-menu">
+                    <div class="hamburger-line" id="hl1"></div><div class="hamburger-line" id="hl2"></div><div class="hamburger-line" id="hl3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <a href="index.html" class="menu-link">Home / Intro</a>
+        <a href="about-us.html" class="menu-link">About Us</a>
+        <a href="board-of-director.html" class="menu-link">Board of Director</a>
+        <a href="flagship-ecosystem.html" class="menu-link">Flagship Ecosystem</a>
+        <a href="service-and-studio.html" class="menu-link">Services & Studio</a>
+        <a href="the-vault.html" class="menu-link">The Vault Data</a>
+        <a href="contact-and-support.html" class="menu-link">Contact & Support</a>
+    </div>
+
     <div class="app-layout">
         <div class="page-section">
             <header class="hero-header">
@@ -7,7 +46,6 @@
 
             <h2 style="font-size: 28px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; margin-bottom: 30px;">Web Architecture</h2>
             <div class="shinko-grid">
-                
                 <div class="glass-card">
                     <div class="card-logo logo-shinko">S32</div>
                     <h3 style="font-size: 22px; font-weight: 800; margin: 0 0 10px;">ShinkoUI 32</h3>
@@ -60,25 +98,7 @@
 
             <h2 style="font-size: 28px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; margin-top: 60px; margin-bottom: 30px;">Root Modules Architecture</h2>
             <div class="shinko-grid">
-                
                 <div class="glass-card">
                     <img src="mrpm.png" class="module-img" alt="MRP Module">
                     <h3 style="font-size: 22px; font-weight: 800; margin: 0 0 10px;">Magic Random Pro (MRP)</h3>
-                    <p style="color: var(--text-sub); line-height: 1.6;">Root modules covering various parts for your phone with spoofing available. Evolving continuously from V11 up to V20.</p>
-                </div>
-
-                <div class="glass-card">
-                    <img src="AIOG.png" class="module-img" alt="AIOG Module">
-                    <h3 style="font-size: 22px; font-weight: 800; margin: 0 0 10px;">All In One Genshin (AIOG)</h3>
-                    <p style="color: var(--text-sub); line-height: 1.6;">Root Module that focuses on pure performance for Genshin games. In the latest variants, it covers several games, starting from V3 to V6.7.</p>
-                </div>
-
-                <div class="glass-card">
-                    <img src="vsm.png" class="module-img" alt="V Series Module">
-                    <h3 style="font-size: 22px; font-weight: 800; margin: 0 0 10px;">V Series Module</h3>
-                    <p style="color: var(--text-sub); line-height: 1.6;">Similar to MRP, but this line will serve as the true successor to the MRP Module framework. Series starting from V5 onwards.</p>
-                </div>
-            </div>
-        </div>
-        <!-- GLOBAL FOOTER HERE -->
-    </div>
+          

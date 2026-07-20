@@ -1,3 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>ASNF Techno Lab | Contact & Support</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mesh-bg" id="meshBg"></div>
+    <div id="bubble-container"></div> 
+    
+    <div id="loading-screen">
+        <div class="load-title">ASNF</div>
+        <div class="load-sub">Official Corporate</div>
+    </div>
+
+    <div class="top-dock-container">
+        <div class="asnf-dock-wrapper">
+            <div class="dock-segment dock-left"><div class="asnf-logo">AF</div></div>
+            <div class="dock-segment dock-center"><div class="dock-center-title" id="dynamic-dock-title">Contact</div></div>
+            <div class="dock-segment dock-right" onclick="toggleMobileMenu()">
+                <div class="hamburger-menu">
+                    <div class="hamburger-line" id="hl1"></div><div class="hamburger-line" id="hl2"></div><div class="hamburger-line" id="hl3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <a href="index.html" class="menu-link">Home / Intro</a>
+        <a href="about-us.html" class="menu-link">About Us</a>
+        <a href="board-of-director.html" class="menu-link">Board of Director</a>
+        <a href="flagship-ecosystem.html" class="menu-link">Flagship Ecosystem</a>
+        <a href="service-and-studio.html" class="menu-link">Services & Studio</a>
+        <a href="the-vault.html" class="menu-link">The Vault Data</a>
+        <a href="contact-and-support.html" class="menu-link">Contact & Support</a>
+    </div>
+
     <div class="app-layout">
         <div class="page-section">
             <header class="hero-header">
@@ -6,7 +45,6 @@
             </header>
 
             <div class="shinko-grid" style="grid-template-columns: 1fr;">
-                
                 <div class="glass-card">
                     <h3 style="font-size: 22px; margin-top: 0; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">Business & Inquiries (Email)</h3>
                     <ul style="list-style: none; padding: 0; margin: 0; font-size: 16px;">
@@ -33,8 +71,16 @@
                     </p>
                     <a href="https://sociabuzz.com/nabilirzap" target="_blank" class="btn-glass btn-primary" style="background: var(--asnf-gold); color: #000; margin-top: 15px;">DONATE VIA SOCIABUZZ</a>
                 </div>
-
             </div>
         </div>
-        <!-- GLOBAL FOOTER HERE -->
+
+        <div class="global-footer">
+            &copy; 2026 ASNF Techno Lab. All Rights Reserved.<br>
+            Powered by Shinko Engine 15.2 Ultra Core.<br><br>
+            <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a>
+        </div>
     </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
